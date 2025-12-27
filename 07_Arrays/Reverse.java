@@ -1,6 +1,4 @@
 public class Reverse{
-
-
     public static void reverse(int arr[]){
         int first = 0;
         int last = arr.length - 1;
@@ -8,7 +6,6 @@ public class Reverse{
             int temp = arr[last];
              arr[last] = arr[first];
              arr[first] = temp;
-
              first ++;
              last --;
          }
@@ -25,7 +22,4 @@ public class Reverse{
         reverse(arr);
         printArray(arr);
     }
-
-
-
 }
