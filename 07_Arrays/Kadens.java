@@ -4,7 +4,7 @@ public class Kadens {
         int maxSum = Integer.MIN_VALUE;
         int currSum = 0;
         for (int i = 0; i < n; i++) {
-            currSum = currSum + arr[i];
+            currSum += arr[i];
             if (currSum < 0) {
                 currSum = 0;
             }
