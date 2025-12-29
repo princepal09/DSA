@@ -1,3 +1,4 @@
+
 public class Kadens {
 
     public static void kadens(int arr[], int n) {
@@ -13,7 +14,7 @@ public class Kadens {
 
         }
 
-        System.out.println(maxSum);
+        System.out.println("And Maximum Sum is: " + maxSum);
 
     }
 
