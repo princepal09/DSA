@@ -1,0 +1,31 @@
+public class Arrays{
+
+    public static void printElem(int arr[], int idx){
+         if(idx == arr.length) return;
+
+         System.out.print(arr[idx]);
+         printElem(arr, idx + 1);
+    }
+
+    public static int maxElem(int [] arr, int idx){
+        if(idx == arr.length - 1) return arr[idx];
+        
+        int smallAns = maxElem(arr, idx + 1);
+        return Math.max(smallAns, arr[idx]);
+
+    }
+
+    public static int sumOfArr(int[]arr, int idx){
+        if(idx == arr.length) return 0;
+        int smallSum  = sumOfArr(arr, idx + 1);
+        return arr[idx] + smallSum;
+    }
+    
+    public static void main(String [] args){
+        int arr[] = {3,5,9,7};
+        // printElem(arr, 0);
+        // System.out.println(maxElem(arr, 0));
+        System.out.println(sumOfArr(arr, 0));
+
+    }
+}
