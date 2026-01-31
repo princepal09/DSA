@@ -25,6 +25,12 @@ public class Questions{
         else return smallPow * smallPow * p;
         // It's a good approach because it takes O(log n ) time .
     }
+
+    public static int reverseNum(int n, int rev){
+        if( n == 0) return rev;
+        return reverseNum(n/10, rev * 10 + n % 10);
+
+    }
    
     public static void main(String [] args){
         // System.out.println(sumOfDigits(3021));
