@@ -1,5 +1,5 @@
-
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class QS2{
 
@@ -24,9 +24,14 @@ public class QS2{
         list.add(4);
         list.add(5);
         list.add(6);
+        list.add(1);
+        list.add(0);
        int ans =  maximum(list);
        System.out.println(ans);
 
-       swap(list,2,3);
+    //    swap(list,2,3);
+    
+    Collections.sort(list);
+
     }
 }
