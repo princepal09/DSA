@@ -19,14 +19,14 @@ class SpiralMatrix {
             }
             right--;
 
-            if (left <= right) {
+            if (top <= bottom) {
                 for (int i = right; i >= left; i--) {
                     System.out.print(arr[bottom][i] + " ");
                 }
                 bottom--;
             }
 
-            if (top <= bottom) {
+            if (left <= right) {
                 for (int i = bottom; i >= top; i--) {
                     System.out.print(arr[i][left] + " ");
                 }
