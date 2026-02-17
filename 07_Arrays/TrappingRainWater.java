@@ -1,4 +1,3 @@
-
 public class TrappingRainWater {
 
     public static int findTrappedWater(int height[]) {
