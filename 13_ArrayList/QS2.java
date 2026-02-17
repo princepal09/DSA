@@ -10,6 +10,13 @@ public class QS2{
         }
         return maxi;
     }
+      
+
+     public static void swap(ArrayList<Integer> list, int idx1, int idx2){
+        int temp = list.get(idx1);
+        list.set(idx1, list.get(idx2));
+        list.set(idx2, temp);
+     } 
     public static void main(String args[]){
         ArrayList<Integer> list = new ArrayList<>();
         list.add(2);
@@ -19,5 +26,7 @@ public class QS2{
         list.add(6);
        int ans =  maximum(list);
        System.out.println(ans);
+
+       swap(list,2,3);
     }
 }
