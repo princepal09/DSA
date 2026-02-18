@@ -1,5 +1,7 @@
+
 public class TrappingRainWater {
 
+    // TC => O(n), SC => O(n) Approach 
     public static int findTrappedWater(int height[]) {
 
         int n = height.length;
@@ -37,8 +39,31 @@ public class TrappingRainWater {
 
     }
 
+    // TC => O(n), SC => O(1) Approach 
+    public static int trappedWater(int height[]) {
+        int l = 0, r = height.length - 1;
+        int leftMax = 0, rightMax = 0;
+        int trappedWater = 0;
+
+        while (l < r) {
+            leftMax = Math.max(leftMax, height[l]);
+            rightMax = Math.max(rightMax, height[r]);
+
+            if (leftMax < rightMax) {
+                trappedWater += leftMax - height[l];
+                l++;
+            } else {
+                trappedWater += rightMax - height[r];
+                r--;
+
+            }
+        }
+        return trappedWater;
+    }
+
     public static void main(String[] args) {
         int height[] = {4, 2, 0, 6, 3, 2, 5};
+        System.out.println(trappedWater(height));
         System.out.println(findTrappedWater(height));
 
     }

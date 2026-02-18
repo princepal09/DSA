@@ -36,10 +36,10 @@ public class PrefixSum {
     public static void main(String[] args) {
         int arr[] = {2, 1, 3, 4, 5};
         //    int[] pref =  prefixSumArray(arr);
-        // prefixSumArray2(arr);
+        prefixSumArray2(arr);
         // printArray(arr);
-        System.out.println("Suffix Sum Array :  ");
-        suffixSumArray(arr);
+        // System.out.println("Suffix Sum Array :  ");
+        // suffixSumArray(arr);
         printArray(arr);
 
     }
