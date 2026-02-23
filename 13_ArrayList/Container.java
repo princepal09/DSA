@@ -13,7 +13,7 @@ class Container {
                 int minHeight = Math.min(height.get(i), height.get(j));
                 int area = width * minHeight;
                 maxWater = Math.max(maxWater, area);
-            }
+            } 
         }
  
         return maxWater;
