@@ -18,7 +18,7 @@ class Container {
     }
 
     //  TC => 0(n) 
-      public int maxArea2(int[] height) {
+      public static int maxArea2(int[] height) {
         int left = 0;
         int right = height.length - 1;
         int maxWater = 0;
@@ -44,7 +44,7 @@ class Container {
     public static void main(String[] args) {
         int height[] = {1,8,6,2,5,4,8,3,7};
 
-        System.out.println(maxArea(height));
+        System.out.println(maxArea2(height));
     }
 
     
