@@ -15,7 +15,7 @@ class Container {
                 maxWater = Math.max(maxWater, area);
             }
         }
-
+ 
         return maxWater;
     }
 
