@@ -8,7 +8,9 @@ public class Main {
     public static void main(String[] args) {
         Queue<Integer> q = new LinkedList<>();
         // Queue<Integer> q = new ArrayDeque<>();
-        Queue<Integer> q1 = new PriorityQueue<>();
+
+        // Most Value => high Priority => Max Heap Behaviour
+        Queue<Integer> pq = new PriorityQueue<>();
 
         // q.offer(10);
         // q.offer(20);
@@ -21,6 +23,15 @@ public class Main {
         // System.out.println(q.poll());
 
         // System.out.println(q);
+
+
+
+        pq.offer(40);
+        pq.offer(30);
+        pq.offer(10);
+        pq.offer(20);
+
+        System.out.println(pq);
 
     }
 
