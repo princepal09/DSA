@@ -1,6 +1,8 @@
 
 public class PivotIndex {
 
+    // FInd pivot index of rotated sorted array
+
     public static int pivotIdx(int arr[]) {
         int n = arr.length;
         int s = 0, e = n - 1;
