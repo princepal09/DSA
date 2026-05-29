@@ -25,11 +25,11 @@ class searchIn2D {
 
     public static void main(String[] args) {
         int mat[][] = {{1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 60}};
-        int target = 90;
+        int target = 23;
         if (searchMatrix(mat, target)) {
-            System.out.println("Yes Your element is present in the matrix");
+            System.out.println("Yes, Your element is present in the matrix");
         } else {
-            System.out.println("OOPS element is not present in the matrix");
+            System.out.println("OOP!! element is not present in the matrix");
 
         }
     }
