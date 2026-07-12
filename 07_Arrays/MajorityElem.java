@@ -1,5 +1,5 @@
 
-import java.util.Arrays;
+import java.util.*;
 
 public class MajorityElem {
 
@@ -19,6 +19,23 @@ public class MajorityElem {
         }
         return -1;
 
+    }
+
+      public static int majElem(int arr[]){
+        int n = arr.length;
+        HashMap<Integer, Integer> freq = new HashMap<>();
+        
+        for(int num : arr){
+            freq.put(num, freq.getOrDefault(num, 0) + 1);
+        }
+        
+        for(int key : freq.keySet()){
+            if(freq.get(key) > n/2){
+                return key;
+            }
+        }
+        
+        return -1;
     }
 
     public static int optimizeApp(int[] arr) {
