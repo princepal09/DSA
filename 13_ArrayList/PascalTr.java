@@ -1,5 +1,5 @@
 import java.util.*;
-
+x
 class PascalTr {
 
     public static  List<List<Integer>> generate(int numRows) {
