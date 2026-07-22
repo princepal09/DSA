@@ -1,7 +1,7 @@
 public class Occurence{
 
     public static int lowerBound(int arr[], int target){
-            int n = arr.length;
+            int n = arr.length; 
             int start = 0, end = n - 1;
             int ans = n;
 
