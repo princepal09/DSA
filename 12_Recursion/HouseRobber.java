@@ -16,7 +16,7 @@ class HouseRobber {
     public static void main(String [] args) {
         int i = 0;
         int nums[] = {2,7,9,3,1};
-        int ans = ans(nums, i)
+        int ans = ans(nums, i);
         System.out.println(ans);
     }
 }
